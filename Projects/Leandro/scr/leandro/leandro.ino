@@ -50,7 +50,7 @@ unsigned long int time_a = millis();
 int segundos = 0;
 int minutos = 22;   //colocar a minuto atual
 int horas = 9;      //colocar o hora atual
-int dia = 30;        //colocar dia atual
+int dia = 30;       //colocar dia atual
 
 // ========================================================= Variaveis de Temperatura ==============================
 
