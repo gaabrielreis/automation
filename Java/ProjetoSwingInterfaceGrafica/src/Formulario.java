@@ -240,6 +240,9 @@ public class Formulario extends javax.swing.JFrame {
 
     private void BCaixa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa1ActionPerformed
         // TODO add your handling code here:        
+        
+        if (ArrayLista.isEmpty()== false){
+        
         int ContemP = 0;
         int Contem = 0;
         texto = "";
@@ -282,7 +285,8 @@ public class Formulario extends javax.swing.JFrame {
 }    
         TCaixaParaAtendimento.setText("Caixa 1");
         Contem = 0;
-        ContemP = 0;  
+        ContemP = 0;
+        }
     }//GEN-LAST:event_BCaixa1ActionPerformed
 
     private void BComumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BComumActionPerformed
@@ -324,6 +328,7 @@ public class Formulario extends javax.swing.JFrame {
 
     private void BCaixa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa2ActionPerformed
         // TODO add your handling code here:
+        if (ArrayLista.isEmpty()== false){
         int ContemR = 0;
         int Contem = 0;
         texto = "";
@@ -367,11 +372,12 @@ public class Formulario extends javax.swing.JFrame {
         TCaixaParaAtendimento.setText("Caixa 2");
         Contem = 0;
         ContemR = 0;
-        
+        }
     }//GEN-LAST:event_BCaixa2ActionPerformed
 
     private void BCaixa3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa3ActionPerformed
         // TODO add your handling code here:
+        if (ArrayLista.isEmpty()== false){
         int ContemR = 0;
         int Contem = 0;
         texto = "";
@@ -415,11 +421,12 @@ public class Formulario extends javax.swing.JFrame {
         TCaixaParaAtendimento.setText("Caixa 3");
         Contem = 0;
         ContemR = 0;
-     
+        }
     }//GEN-LAST:event_BCaixa3ActionPerformed
 
     private void BCaixa4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa4ActionPerformed
         // TODO add your handling code here:
+        if (ArrayLista.isEmpty()== false){
         int ContemC = 0;
         int Contem = 0;
         texto = "";
@@ -463,7 +470,7 @@ public class Formulario extends javax.swing.JFrame {
         TCaixaParaAtendimento.setText("Caixa 4");
         Contem = 0;
         ContemC = 0;
-    
+        }
     }//GEN-LAST:event_BCaixa4ActionPerformed
 
     /**
