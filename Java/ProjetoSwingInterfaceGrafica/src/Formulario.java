@@ -372,7 +372,7 @@ public class Formulario extends javax.swing.JFrame {
 
     private void BCaixa3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa3ActionPerformed
         // TODO add your handling code here:
-                int ContemR = 0;
+        int ContemR = 0;
         int Contem = 0;
         texto = "";
         String procurar;
@@ -412,7 +412,7 @@ public class Formulario extends javax.swing.JFrame {
          }
     } 
 }    
-        TCaixaParaAtendimento.setText("Caixa 2");
+        TCaixaParaAtendimento.setText("Caixa 3");
         Contem = 0;
         ContemR = 0;
      
@@ -420,6 +420,50 @@ public class Formulario extends javax.swing.JFrame {
 
     private void BCaixa4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa4ActionPerformed
         // TODO add your handling code here:
+        int ContemC = 0;
+        int Contem = 0;
+        texto = "";
+        String procurar;
+        
+        for(int i = 0; i <= numero; i++){
+            procurar = "C-";
+            procurar += i;
+            
+         if((ArrayLista.contains(procurar) == true) && ContemC==0){
+            ContemC = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         } 
+        }
+        
+        if (ContemC==0){
+        for(int i = 0; i <= numero; i++){
+            procurar = "R-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+            procurar = "P-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+    } 
+}    
+        TCaixaParaAtendimento.setText("Caixa 4");
+        Contem = 0;
+        ContemC = 0;
+    
     }//GEN-LAST:event_BCaixa4ActionPerformed
 
     /**
