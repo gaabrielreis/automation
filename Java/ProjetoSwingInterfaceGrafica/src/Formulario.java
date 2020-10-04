@@ -128,10 +128,25 @@ public class Formulario extends javax.swing.JFrame {
         });
 
         BCaixa2.setText("Caixa 2");
+        BCaixa2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCaixa2ActionPerformed(evt);
+            }
+        });
 
         BCaixa3.setText("Caixa 3");
+        BCaixa3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCaixa3ActionPerformed(evt);
+            }
+        });
 
         BCaixa4.setText("Caixa 4");
+        BCaixa4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCaixa4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -265,7 +280,7 @@ public class Formulario extends javax.swing.JFrame {
          }
     } 
 }    
-        
+        TCaixaParaAtendimento.setText("Caixa 1");
         Contem = 0;
         ContemP = 0;  
     }//GEN-LAST:event_BCaixa1ActionPerformed
@@ -306,6 +321,106 @@ public class Formulario extends javax.swing.JFrame {
         TSenhaGerada.setText(texto);
         objSenha.setArrayFila(ArrayLista);
     }//GEN-LAST:event_BPrioritarioActionPerformed
+
+    private void BCaixa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa2ActionPerformed
+        // TODO add your handling code here:
+        int ContemR = 0;
+        int Contem = 0;
+        texto = "";
+        String procurar;
+        
+        for(int i = 0; i <= numero; i++){
+            procurar = "R-";
+            procurar += i;
+            
+         if((ArrayLista.contains(procurar) == true) && ContemR==0){
+            ContemR = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         } 
+        }
+        
+        if (ContemR==0){
+        for(int i = 0; i <= numero; i++){
+            procurar = "C-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+            procurar = "P-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+    } 
+}    
+        TCaixaParaAtendimento.setText("Caixa 2");
+        Contem = 0;
+        ContemR = 0;
+        
+    }//GEN-LAST:event_BCaixa2ActionPerformed
+
+    private void BCaixa3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa3ActionPerformed
+        // TODO add your handling code here:
+                int ContemR = 0;
+        int Contem = 0;
+        texto = "";
+        String procurar;
+        
+        for(int i = 0; i <= numero; i++){
+            procurar = "R-";
+            procurar += i;
+            
+         if((ArrayLista.contains(procurar) == true) && ContemR==0){
+            ContemR = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         } 
+        }
+        
+        if (ContemR==0){
+        for(int i = 0; i <= numero; i++){
+            procurar = "C-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+            procurar = "P-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+    } 
+}    
+        TCaixaParaAtendimento.setText("Caixa 2");
+        Contem = 0;
+        ContemR = 0;
+     
+    }//GEN-LAST:event_BCaixa3ActionPerformed
+
+    private void BCaixa4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BCaixa4ActionPerformed
 
     /**
      * @param args the command line arguments

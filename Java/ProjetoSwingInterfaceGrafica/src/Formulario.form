@@ -217,16 +217,25 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Caixa 2"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BCaixa2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="BCaixa3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Caixa 3"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BCaixa3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="BCaixa4">
           <Properties>
             <Property name="text" type="java.lang.String" value="Caixa 4"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BCaixa4ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
