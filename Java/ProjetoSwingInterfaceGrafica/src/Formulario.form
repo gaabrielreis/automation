@@ -115,6 +115,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Comum"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BComumActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="BRapido">
           <Properties>
@@ -200,6 +203,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Caixa 1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BCaixa1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="BCaixa2">
           <Properties>

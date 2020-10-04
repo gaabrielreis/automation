@@ -48,6 +48,11 @@ public class Formulario extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Para Clientes:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 11))); // NOI18N
 
         BComum.setText("Comum");
+        BComum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BComumActionPerformed(evt);
+            }
+        });
 
         BRapido.setText("Rápido");
 
@@ -101,6 +106,11 @@ public class Formulario extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Para caixas:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 11))); // NOI18N
 
         BCaixa1.setText("Caixa 1");
+        BCaixa1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCaixa1ActionPerformed(evt);
+            }
+        });
 
         BCaixa2.setText("Caixa 2");
 
@@ -197,6 +207,17 @@ public class Formulario extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BCaixa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa1ActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_BCaixa1ActionPerformed
+
+    private void BComumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BComumActionPerformed
+        // TODO add your handling code here:
+       Senha objSenha = new Senha();
+       
+    }//GEN-LAST:event_BComumActionPerformed
 
     /**
      * @param args the command line arguments
