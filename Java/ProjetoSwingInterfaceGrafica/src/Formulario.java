@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class Formulario extends javax.swing.JFrame {
     public ArrayList<String> ArrayLista = new ArrayList();
     public String texto ="";
+    public int numero;
     /**
      * Creates new form Formulario
      */
@@ -223,15 +224,59 @@ public class Formulario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BCaixa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa1ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:        
+        int ContemP = 0;
+        int Contem = 0;
+        texto = "";
+        String procurar;
+        
+        for(int i = 0; i <= numero; i++){
+            procurar = "P-";
+            procurar += i;
+            
+         if((ArrayLista.contains(procurar) == true) && ContemP==0){
+            ContemP = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         } 
+        }
+        
+        if (ContemP==0){
+        for(int i = 0; i <= numero; i++){
+            procurar = "C-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+            procurar = "R-";
+            procurar += i;
+            if((ArrayLista.contains(procurar) == true) && Contem==0){
+            Contem = 1;
+            ArrayLista.remove(procurar);
+            //numero--;
+            texto = procurar;
+            TSenhaParaAtendimento.setText(texto);
+         }
+    } 
+}    
+        
+        Contem = 0;
+        ContemP = 0;  
     }//GEN-LAST:event_BCaixa1ActionPerformed
 
     private void BComumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BComumActionPerformed
         Senha objSenha = new Senha();
-        ArrayLista.add("C");
         texto = "";
         texto += "C-";
-        texto += ArrayLista.size();
+        numero++;
+        texto += numero;
+        ArrayLista.add(texto);
         TSenhaGerada.setText(texto);
         objSenha.setArrayFila(ArrayLista);
     }//GEN-LAST:event_BComumActionPerformed
@@ -239,10 +284,11 @@ public class Formulario extends javax.swing.JFrame {
     private void BRapidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BRapidoActionPerformed
         // TODO add your handling code here:
         Senha objSenha = new Senha();
-        ArrayLista.add("R");
         texto = "";
         texto += "R-";
-        texto += ArrayLista.size();
+        numero++;
+        texto += numero;
+        ArrayLista.add(texto);
         TSenhaGerada.setText(texto);
         objSenha.setArrayFila(ArrayLista);
         
@@ -251,10 +297,12 @@ public class Formulario extends javax.swing.JFrame {
     private void BPrioritarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BPrioritarioActionPerformed
         // TODO add your handling code here:
         Senha objSenha = new Senha();
-        ArrayLista.add("P");
+        
         texto = "";
         texto += "P-";
-        texto += ArrayLista.size();
+        numero++;
+        texto += numero;
+        ArrayLista.add(texto);
         TSenhaGerada.setText(texto);
         objSenha.setArrayFila(ArrayLista);
     }//GEN-LAST:event_BPrioritarioActionPerformed
