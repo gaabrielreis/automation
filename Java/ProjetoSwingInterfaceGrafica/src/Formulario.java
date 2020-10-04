@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,7 +12,8 @@
  * @author Gabriel
  */
 public class Formulario extends javax.swing.JFrame {
-
+    public ArrayList<String> ArrayLista = new ArrayList();
+    public String texto ="";
     /**
      * Creates new form Formulario
      */
@@ -55,8 +59,18 @@ public class Formulario extends javax.swing.JFrame {
         });
 
         BRapido.setText("Rápido");
+        BRapido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BRapidoActionPerformed(evt);
+            }
+        });
 
         BPrioritario.setText("Prioritário");
+        BPrioritario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BPrioritarioActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Escolha seu tipo de atendimento");
 
@@ -210,14 +224,40 @@ public class Formulario extends javax.swing.JFrame {
 
     private void BCaixa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCaixa1ActionPerformed
         // TODO add your handling code here:
-
     }//GEN-LAST:event_BCaixa1ActionPerformed
 
     private void BComumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BComumActionPerformed
-        // TODO add your handling code here:
-       Senha objSenha = new Senha();
-       
+        Senha objSenha = new Senha();
+        ArrayLista.add("C");
+        texto = "";
+        texto += "C-";
+        texto += ArrayLista.size();
+        TSenhaGerada.setText(texto);
+        objSenha.setArrayFila(ArrayLista);
     }//GEN-LAST:event_BComumActionPerformed
+
+    private void BRapidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BRapidoActionPerformed
+        // TODO add your handling code here:
+        Senha objSenha = new Senha();
+        ArrayLista.add("R");
+        texto = "";
+        texto += "R-";
+        texto += ArrayLista.size();
+        TSenhaGerada.setText(texto);
+        objSenha.setArrayFila(ArrayLista);
+        
+    }//GEN-LAST:event_BRapidoActionPerformed
+
+    private void BPrioritarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BPrioritarioActionPerformed
+        // TODO add your handling code here:
+        Senha objSenha = new Senha();
+        ArrayLista.add("P");
+        texto = "";
+        texto += "P-";
+        texto += ArrayLista.size();
+        TSenhaGerada.setText(texto);
+        objSenha.setArrayFila(ArrayLista);
+    }//GEN-LAST:event_BPrioritarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -247,10 +287,8 @@ public class Formulario extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Formulario().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Formulario().setVisible(true);
         });
     }
 

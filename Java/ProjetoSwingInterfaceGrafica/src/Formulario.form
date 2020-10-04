@@ -123,11 +123,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="R&#xe1;pido"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BRapidoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="BPrioritario">
           <Properties>
             <Property name="text" type="java.lang.String" value="Priorit&#xe1;rio"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BPrioritarioActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>

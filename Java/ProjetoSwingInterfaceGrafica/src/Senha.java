@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -21,11 +23,11 @@ public class Senha {
     private String TCaixaParaAtendimento;
     private String TSenhaParaAtendimento;
     
-    
-    String tipo;
-    int numero;
-    
-    
+    public ArrayList<String> ArrayFila = new ArrayList();
+  
+    //Atributos
+    public String tipo;
+    public int numero;
 
     public boolean isBCaixa1() {
         return BCaixa1;
@@ -105,6 +107,30 @@ public class Senha {
 
     public void setTSenhaParaAtendimento(String TSenhaParaAtendimento) {
         this.TSenhaParaAtendimento = TSenhaParaAtendimento;
+    }
+
+    public ArrayList<String> getArrayFila() {
+        return ArrayFila;
+    }
+
+    public void setArrayFila(ArrayList<String> ArrayFila) {
+        this.ArrayFila = ArrayFila;
+    }
+    
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
     
 }
