@@ -10,13 +10,9 @@ package Controle;
  * @author Gabriel
  */
 public class Automovel {
-   boolean motor;
-   int nDeRodas;
-   int nDePortas;
-   
-   
-   
-   
-    
+    boolean motor;
+    int rodas;
+    int portas;
+    int velocidade;
     
 }

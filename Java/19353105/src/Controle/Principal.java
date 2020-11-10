@@ -9,6 +9,11 @@ package Controle;
  *
  * @author Gabriel
  */
-public class Caminhão {
+public class Principal {
+
+
     
+    public static void main(String[] args){
+           
+}
 }
