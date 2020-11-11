@@ -39,20 +39,20 @@ public class Principal {
         Carro.ligar();
         Carro.farol(true);
         Carro.acelerar(10);
-        Carro.diminuir(10);
+        Carro.acelerar(10);
         
         Moto.ligar();
         Moto.farol(true);
         Moto.acelerar(20);
-        Moto.diminuir(20);
+        Moto.acelerar(20);
         
-        Caminhao.ligar();
-        Caminhao.farol(true);
         Caminhao.acelerar(5);
-        Caminhao.diminuir(5);
+        Caminhao.acelerar(5);
+        Caminhao.trocarPneus();
         
-        
-        
+        Carro.exibirEstado("Carro");
+        Moto.exibirEstado("Moto");
+        Caminhao.exibirEstado("Caminhao");
         
         //Aviso excesso de velocidade
         if(Carro.velocidade > 110){
