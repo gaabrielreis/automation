@@ -46,6 +46,34 @@ public class Automovel {
     public void pintar(String corDaTinta){
             cor = corDaTinta;
         }
+    
+    public void exibirEstado(boolean motorCarro, int velocidadeCarro,boolean motorMoto, int velocidadeMoto, boolean motorCaminhao, int velocidadeCaminhao){ 
+        System.out.println("Estado do carro:");
+        if(motorCarro == true){
+            System.out.println("Carro ligado");
+        }else{
+            System.out.println("Carro desligado");
+            }
+        System.out.println("Velocidade: "+velocidadeCarro+"km/h");
+        
+        
+        System.out.println("Estado da moto:");
+         if(motorMoto == true){
+            System.out.println("Moto ligada");
+        }else{
+            System.out.println("Moto desligado");
+            }
+        System.out.println("Velocidade: "+velocidadeMoto+"km/h");
+                 
+  
+        System.out.println("Estado do caminhao:");        
+        if(motorCaminhao == true){
+            System.out.println("Caminhao ligado");
+        }else{
+            System.out.println("Caminhao desligado");
+            } 
+        System.out.println("Velocidade: "+velocidadeCaminhao+"km/h");
+}
 }
     
 
