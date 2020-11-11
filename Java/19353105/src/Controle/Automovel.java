@@ -12,9 +12,12 @@ package Controle;
 public class Automovel {
     
     boolean motor = false; //True motor ligado e false motor desligado
-    int rodas;
+    int qtdRodas;
     int portas;
     int velocidade = 0;
+    String cor;
+    boolean farol;
+    
     
     public void ligar(){
             motor = true;
@@ -29,13 +32,20 @@ public class Automovel {
         }
     public void diminuir(int variacao){
             if (motor == true) {
-                velocidade = velocidade + variacao;
+                velocidade = velocidade - variacao;
             }
         }
     public void trocarPneus(){
-            rodas = 0;
+            int gastos = qtdRodas * 150;
+            System.out.println("Valor gasto para trocar pneus é: R$"+gastos+",00");
+        }
+    public void farol(boolean estado){
+            farol = estado;
         }
     
+    public void pintar(String corDaTinta){
+            cor = corDaTinta;
+        }
 }
     
 
